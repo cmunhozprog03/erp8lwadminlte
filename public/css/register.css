@@ -1,0 +1,24 @@
+#social_name {
+  text-transform: uppercase;
+}
+#fantasy_name {
+  text-transform: uppercase;
+}
+#address {
+  text-transform: uppercase;
+}
+#address_complement {
+  text-transform: uppercase;
+}
+#address_district {
+  text-transform: uppercase;
+}
+#address_city {
+  text-transform: uppercase;
+}
+#address_state {
+  text-transform: uppercase;
+}
+#email {
+  text-transform: lowercase;
+}
