@@ -24,7 +24,7 @@
             </div>
             <div class="col-5">
               {!! Form::label('fantasy_name', 'Nome Fantasia') !!}
-              {!! Form::text('fantasy_name', null, ['class' => 'w3-input']) !!}
+              {!! Form::text('fantasy_name', null, ['class' => 'w3-input form-control-sm']) !!}
 
               @error('social_name')
                   <small class="text-danger">{{ $message }}</small>
@@ -37,7 +37,7 @@
           <div class="row">
             <div class="col-5">
               {!! Form::label('cnpj', 'CNPJ') !!}
-              {!! Form::text('cnpj', null, ['class' => 'w3-input']) !!}
+              {!! Form::text('cnpj', null, ['class' => 'w3-input', 'onblur = validaCpfCnpj(this.value);']) !!}
 
               @error('cnpj')
                 <small class="text-danger">{{ $message }}</small>
@@ -45,7 +45,7 @@
             </div>
             <div class="col-4">
               {!! Form::label('ie', 'I.E.') !!}
-              {!! Form::text('ie', null, ['class' => 'w3-input']) !!}
+              {!! Form::text('ie', null, ['class' => 'w3-input ']) !!}
 
               @error('ie')
                 <small class="text-danger">{{ $message }}</small>
@@ -168,5 +168,6 @@
     <script src="{{ asset('vendor/jquery/jQuery-Mask-Plugin/dist/jquery.mask.min.js') }}"> </script>
     <script src="{{ asset('js/mask.js') }}"></script>
     <script src="{{ asset('js/cep.js') }}"></script>
+    <script src="{{ asset('js/cpfCnpj.js') }}"></script>
 
     @stop

@@ -4,9 +4,7 @@ $(document).ready(function(){
 
 $('#cnpj').mask('00.000.000/0000-00', {reverse: true});
 $('#ie').mask('000.000.000.000', {reverse: true});
-
-
-
+$('#cep').mask('00000-000');  
 
 
 var SPMaskBehavior = function (val) {
@@ -18,8 +16,12 @@ spOptions = {
     }
 };
 
+
 $('#mobile').mask(SPMaskBehavior, spOptions);
 $('#phone').mask(SPMaskBehavior, spOptions);
+
+ 
+
 });
 
 
